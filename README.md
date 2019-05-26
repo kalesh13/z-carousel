@@ -1,16 +1,38 @@
-# z-carousal
-A simple, high-performance and cross-browser jQuery text rotator and carousal plugin for Vue. The plugin supports usage of Animate.css animations.
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+# z-Carousal
+A simple, high-performance and cross-browser jQuery text rotator and carousal plugin for Vue.js. The plugin supports usage of Animate.css animations.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+z-Carousal is a jQuery based plugin. So, please make sure that jQuery is installed and has been initialized before z-Carousal is initialized.
+
+Install jQuery via npm:
 
 ```
-Give examples
+npm install --save-dev jquery
+```
+
+z-Carousal by default uses jQuery's ```fadeIn``` animation. z-Carousal also supports animations provided by [Animate.css](https://github.com/daneden/animate.css). Animate.css has to be installed for using custom animations and this is not mandatory.
+
+Install Animate.css via npm:
+
+```
+npm install --save-dev animate.css
+```
+
+z-Carousal also supports carousal pagination which uses a [FontAwesome](https://github.com/FortAwesome/Font-Awesome) icon by default. Install FontAwesome to use the default pagination style. If pagination is not required or if you want to custom style the pagination icons, then FontAwesome is not required.
+
+Install FontAwesome via npm:
+
+```
+npm install --save-dev font-awesome
+```
+
+## Installation
+
+Install via npm:
+
+```
+npm install --save-dev z-carousal
 ```
 
 ### Installing
@@ -37,9 +59,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Kalesh Kaladharan** - *Initial work* - [Send2Sell](https://github.com/kalesh13)
+* **[Kalesh Kaladharan](https://github.com/kalesh13)** - *Initial work* - Send2Sell Inc
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/kalesh13/z-Carousal/contributors) who participated in this project.
 
 ## License
 
