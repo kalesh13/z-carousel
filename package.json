@@ -38,26 +38,18 @@
   },
   "keywords": [
     "vue",
-    "carousal",
-    "text",
-    "rotator",
+    "vuejs",
+    "carousel",
     "animate.css",
     "animations",
-    "text",
-    "rotator",
-    "plugin",
-    "plugin",
-    "react",
-    "angular",
-    "react",
-    "plugin",
-    "jquery",
-    "plugin"
+    "text-rotator",
+    "carousel-plugin",
+    "jquery-plugin"
   ],
   "author": "Kalesh Kaladharan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kalesh13/z-carousal/issues"
+    "url": "https://github.com/kalesh13/z-Carousel/issues"
   },
-  "homepage": "https://github.com/kalesh13/z-carousal#readme"
+  "homepage": "https://github.com/kalesh13/z-Carousel#readme"
 }

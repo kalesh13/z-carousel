@@ -3,10 +3,10 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
-        library: 'zCarousal',
+        library: 'zCarousel',
         libraryTarget: 'umd',
         libraryExport: 'default',
         path: path.resolve(__dirname, 'build'),
