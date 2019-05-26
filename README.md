@@ -35,6 +35,13 @@ Install via npm:
 npm install --save-dev z-carousal
 ```
 
+**Standalone installation**
+
+* Download the file from [here](https://raw.githubusercontent.com/kalesh13/z-Carousal/master/build/index.js)
+* Save the downloaded file in your server.
+* Import the file in your application using ```<script src="path_to_downloaded_file"></script>```
+* Plugin initialization is given at the bottom of Usage section.
+
 ### Usage
 
 z-Carousal is easy to implement in your existing applications.
@@ -60,7 +67,9 @@ z-Carousal is easy to implement in your existing applications.
 
 * A single page can have multiple carousal elements and z-Carousal will handle each carousal differently. z-Carousal looks for all the elements in the DOM with ```z-carousal``` class and register a carousal for the element.
 
-As you can see, the element with ```z-carousal```  is where we define the various customization options. Following are the data fields and their default values used in the plugin to customise the carousal.
+* Set the ```li``` items to have ```display:none;``` style. This is to make sure that the UI does not look bad  before the initilization of the plugin.
+
+* As you can see, the element with ```z-carousal```  is where we define the various customization options. Following are the data fields and their default values used in the plugin to customise the carousal.
 
 | Data   | Default | Description |
 | :------ | :-------: | :----------- |
@@ -70,8 +79,6 @@ As you can see, the element with ```z-carousal```  is where we define the variou
 | data-speed | 600ms | This is the speed at which jQuery's ```fadeIn``` completes animation. If the animation has to be completed in 1 second, set ```data-speed='1000'```. This data does nothing, if a custom animation is used. |
 | data-enter-animation | *Uses jQuery's fadeIn animation* | Define this property to use a custom animation provided by Animate.css. To have a ```bounceIn``` animation, set ```data-enter-animation='bounceIn'```. To use the Animate.css ```slow``` class, set ```data-enter-animation='bounceIn slow'```. Similarly, all the Animate.css speed classes can be used. |
 
-* Set the ```li``` items to have ```display:none;``` style. This is to make sure that the UI does not look bad, when the plugin is not loaded.
-
 **Plugin Initialization**
 
 * In Vue.js components or in ES6 scripts, import the plugin using ```import zCarousal from "z-carousal"```
@@ -79,13 +86,25 @@ As you can see, the element with ```z-carousal```  is where we define the variou
 
 For example, in Vue.js component
 ```
-import zCarousal from "z-carousal"
+//
+// you can use any variable name for the import.
+//
+import carousal from "z-carousal"
 
 export default{
     mounted:function(){
-        zCarousal.registerCarousals();
+        carousal.registerCarousals();
     }
 }
+```
+
+* **Standalone installation**, initilise the plugin as shown below
+```
+<script type='text/javascript'>
+    $(function() {                
+        zCarousal.registerCarousals();
+    });
+</script>
 ```
 
 ## Authors
