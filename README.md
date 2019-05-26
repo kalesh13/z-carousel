@@ -63,12 +63,30 @@ z-Carousal is easy to implement in your existing applications.
 As you can see, the element with ```z-carousal```  is where we define the various customization options. Following are the data fields and their default values used in the plugin to customise the carousal.
 
 | Data   | Default | Description |
-| ------ | ------- | ----------- |
+| :------ | :-------: | :----------- |
 | data-pagination | false | Set this field ```data-pagination='true'``` to show carousal pagination |
 | data-delay | 2000ms | Define the initial delay after which the carousal rotation should begin. For initial delay of 5 seconds, set ```data-delay='5000'``` as in ```<div class='z-carousal' data-delay='5000'>``` |
-| data-interval | 3000ms | This property determines, how long an item has to be displayed. For displaying an item for 3.5 seconds, set ```data-interval='3500'``` as in ```<div class='z-carousal' data-interval='3500'>``` |
-| data-speed | 600ms | This is the speed at which jQuery's ```fadeIn``` completes animation. If the animation has to be completed in 1 second, set ```data-speed='1000'``` as in ```<div class='z-carousal' data-speed='1000'>```. This data does nothing, if a custom animation is used |
-| data-enter-animation | *Uses jQuery's fadeIn animation* | Define this property to use a custom animation provided by Animate.css. To have a ```bounceIn``` animation, set ```data-enter-animation='bounceIn'``` as in ```<div class='z-carousal' data-enter-animation='bounceIn'>```. To use the Animate.css ```slow``` class, set ```data-enter-animation='bounceIn slow'```. Similarly, all the Animate.css speed classes can be used. |
+| data-interval | 3000ms | This property determines, how long an item has to be displayed. For displaying an item for 3.5 seconds, set ```data-interval='3500'``` |
+| data-speed | 600ms | This is the speed at which jQuery's ```fadeIn``` completes animation. If the animation has to be completed in 1 second, set ```data-speed='1000'```. This data does nothing, if a custom animation is used. |
+| data-enter-animation | *Uses jQuery's fadeIn animation* | Define this property to use a custom animation provided by Animate.css. To have a ```bounceIn``` animation, set ```data-enter-animation='bounceIn'```. To use the Animate.css ```slow``` class, set ```data-enter-animation='bounceIn slow'```. Similarly, all the Animate.css speed classes can be used. |
+
+* Set the ```li``` items to have ```display:none;``` style. This is to make sure that the UI does not look bad, when the plugin is not loaded.
+
+**Plugin Initialization**
+
+* In Vue.js components or in ES6 scripts, import the plugin using ```import zCarousal from "z-carousal"```
+* Initialise the plugin using ```zCarousal.registerCarousals();```
+
+For example, in Vue.js component
+```
+import zCarousal from "z-carousal"
+
+export default{
+    mounted:function(){
+        zCarousal.registerCarousals();
+    }
+}
+```
 
 ## Authors
 
