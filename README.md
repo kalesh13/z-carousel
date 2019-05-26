@@ -98,7 +98,8 @@ export default{
 }
 ```
 
-* **Standalone installation**, initilise the plugin as shown below
+**Plugin Initialization of Standalone Installation**
+
 ```
 <script type='text/javascript'>
     $(function() {                
