@@ -1,0 +1,42 @@
+{
+  "name": "z-carousal",
+  "version": "1.0.0",
+  "description": "A simple, high-performance and cross-browser jQuery text rotator and carousal plugin for Vue. The plugin supports usage of Animate.css animations.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack-dev-server": "^3.4.1",
+    "webpack": "^4.32.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalesh13/z-carousal.git"
+  },
+  "keywords": [
+    "vue",
+    "carousal",
+    "text",
+    "rotator",
+    "animate.css",
+    "animations",
+    "text",
+    "rotator",
+    "plugin",
+    "plugin",
+    "react",
+    "angular",
+    "react",
+    "plugin",
+    "jquery",
+    "plugin"
+  ],
+  "author": "Kalesh Kaladharan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalesh13/z-carousal/issues"
+  },
+  "homepage": "https://github.com/kalesh13/z-carousal#readme"
+}
