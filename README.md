@@ -1,5 +1,5 @@
-# z-Carousal [![GitHub release](https://img.shields.io/github/release/kalesh13/z-Carousal.svg)](https://github.com/kalesh13/z-Carousal/releases) [![npm version](https://badge.fury.io/js/z-carousal.svg)](https://badge.fury.io/js/z-carousal)
-A simple, high-performance and cross-browser jQuery text rotator and carousal plugin for Vue.js. The plugin supports usage of Animate.css animations.
+# z-Carousel [![GitHub release](https://img.shields.io/github/release/kalesh13/z-Carousel.svg)](https://github.com/kalesh13/z-Carousel/releases) [![npm version](https://badge.fury.io/js/z-carousel.svg)](https://badge.fury.io/js/z-carousel)
+A simple, high-performance and cross-browser jQuery text rotator and carousel plugin for Vue.js. The plugin supports usage of Animate.css animations.
 
 ### Prerequisites
 
