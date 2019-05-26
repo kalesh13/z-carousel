@@ -29,13 +29,13 @@ npm install --save-dev font-awesome
 
 ## Installation
 
-Install via npm:
+**Install via npm:**
 
 ```
 npm install --save-dev z-carousal
 ```
 
-**Standalone installation**
+**Or, Standalone installation**
 
 * Download the file from [here](https://raw.githubusercontent.com/kalesh13/z-Carousal/master/build/index.js)
 * Save the downloaded file in your server.

@@ -1,5 +1,4 @@
 node_modules
 webpack.config.dev.js
-webpack.config.js
 package-lock.json
 postcss.config.js
