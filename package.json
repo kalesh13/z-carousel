@@ -1,7 +1,7 @@
 {
-  "name": "z-carousal",
+  "name": "z-carousel",
   "version": "1.0.0",
-  "description": "A simple, high-performance and cross-browser jQuery text rotator and carousal plugin for Vue. The plugin supports usage of Animate.css animations.",
+  "description": "A simple, high-performance and cross-browser jQuery text rotator and carousel plugin for Vue. The plugin supports usage of Animate.css animations.",
   "main": "build/index.js",
   "bundleDependencies": false,
   "dependencies": {},

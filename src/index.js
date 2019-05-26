@@ -1,7 +1,7 @@
 import './scss/style.scss';
 
 import {
-    zCarousal
-} from './lib/zCarousal';
+    zCarousel
+} from './lib/zCarousel';
 
-export default zCarousal;
+export default zCarousel;

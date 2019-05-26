@@ -1,6 +1,6 @@
-export class zCarousal {
+export class zCarousel {
     constructor(element) {
-        this.jQueryCarousal = element;
+        this.jQueryCarousel = element;
 
         this.items = null;
         this.paginators = null;
@@ -9,22 +9,22 @@ export class zCarousal {
         this.timer = null;
     }
 
-    static registerCarousals() {
+    static registerCarousels() {
         //Check for the existence of jquery
         if (!window.$) {
             console.log("JQuery should be added before execution of this class");
             return;
         }
 
-        $('.z-carousal').each(function () {
-            let carousal = new zCarousal($(this));
-            carousal.registerCarousal();
+        $('.z-carousel').each(function () {
+            let carousel = new zCarousel($(this));
+            carousel.registerCarousel();
         });
     }
 
-    registerCarousal() {
+    registerCarousel() {
         //
-        // Load the settings of the carousal like 
+        // Load the settings of the carousel like 
         // exit animation, enter animation, reset animation
         // duration of each item
         //
@@ -39,7 +39,7 @@ export class zCarousal {
         // Add pagination if pagination is required by the settings
         // Pagination also adds a click handler to handle
         // the navigation
-        if (this.jQueryCarousal.data('pagination') == true) {
+        if (this.jQueryCarousel.data('pagination') == true) {
             this.addPagination();
         }
 
@@ -50,21 +50,21 @@ export class zCarousal {
         // Register the carousal timer only if the number of items
         // is greater than 1
         if (items && items.length > 1) {
-            this.registerCarousalTimer();
+            this.registerCarouselTimer();
         }
     }
 
-    registerCarousalTimer() {
+    registerCarouselTimer() {
         let self = this;
 
         setTimeout(function (self) {
-            self.deregisterCarousalTimer();
+            self.deregisterCarouselTimer();
 
             self.timer = setInterval(self.showNextItem, self.interval, self);
         }, self.delay, self)
     }
 
-    deregisterCarousalTimer() {
+    deregisterCarouselTimer() {
         if (this.timer == null) return;
 
         clearInterval(this.timer);
@@ -126,21 +126,21 @@ export class zCarousal {
     }
 
     loadItems() {
-        if (this.jQueryCarousal) {
-            this.items = this.jQueryCarousal.find('li');
+        if (this.jQueryCarousel) {
+            this.items = this.jQueryCarousel.find('li');
             return this.items;
         }
         return null;
     }
 
     loadDatas() {
-        if (!this.jQueryCarousal) return;
+        if (!this.jQueryCarousel) return;
 
-        this.delay = this.jQueryCarousal.data('delay') || 2000;
-        this.interval = this.jQueryCarousal.data('interval') || 3000;
-        this.animateSpeed = this.jQueryCarousal.data('speed') || 600;
+        this.delay = this.jQueryCarousel.data('delay') || 2000;
+        this.interval = this.jQueryCarousel.data('interval') || 3000;
+        this.animateSpeed = this.jQueryCarousel.data('speed') || 600;
 
-        this.enterAnimation = this.jQueryCarousal.data('enterAnimation');
+        this.enterAnimation = this.jQueryCarousel.data('enterAnimation');
     }
 
     hideItem(index, jQueryElement) {
@@ -175,12 +175,12 @@ export class zCarousal {
     }
 
     addPagination() {
-        if (!this.jQueryCarousal) return;
+        if (!this.jQueryCarousel) return;
 
-        let parent = this.jQueryCarousal.parent('.z-carousal-wrapper');
+        let parent = this.jQueryCarousel.parent('.z-carousel-wrapper');
         let paginators = this.createPaginators();
 
-        parent.append($("<div class='z-carousal-pagination'></div>").append(paginators));
+        parent.append($("<div class='z-carousel-pagination'></div>").append(paginators));
     }
 
     createPaginators() {
@@ -194,12 +194,12 @@ export class zCarousal {
             paginator.click(function (e) {
                 e.preventDefault();
 
-                self.deregisterCarousalTimer();
+                self.deregisterCarouselTimer();
 
                 self.showHideItems(self.items, index);
 
                 // register a new timer;
-                self.registerCarousalTimer();
+                self.registerCarouselTimer();
             });
 
             if (!self.paginators) {
