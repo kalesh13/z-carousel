@@ -1,0 +1,29 @@
+.z-carousal-wrapper {
+    .z-carousal {
+        >ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .z-carousal-pagination a {
+        display: inline-block;
+        opacity: 0.3;
+        width: 14px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 14px;
+        margin: 3px !important;
+        color: inherit;
+
+        &.selected {
+            opacity: 0.5;
+        }
+
+        &:before {
+            content: "\f111";
+            font-family: "FontAwesome";
+        }
+    }
+}

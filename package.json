@@ -2,14 +2,35 @@
   "name": "z-carousal",
   "version": "1.0.0",
   "description": "A simple, high-performance and cross-browser jQuery text rotator and carousal plugin for Vue. The plugin supports usage of Animate.css animations.",
-  "main": "index.js",
+  "main": "build/index.js",
+  "bundleDependencies": false,
   "dependencies": {},
   "devDependencies": {
-    "webpack-dev-server": "^3.4.1",
-    "webpack": "^4.32.2"
+    "animate.css": "^3.7.0",
+    "autoprefixer": "^9.5.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "font-awesome": "^4.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cross-env NODE_ENV=production webpack --progress --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --config=webpack.config.dev.js",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
