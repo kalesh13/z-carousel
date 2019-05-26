@@ -42,7 +42,7 @@ npm install --save-dev z-carousal
 * Import the file in your application using ```<script src="path_to_downloaded_file"></script>```
 * Plugin initialization is given at the bottom of Usage section.
 
-### Usage
+## Usage
 
 z-Carousal is easy to implement in your existing applications.
 
